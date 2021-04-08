@@ -23,7 +23,7 @@ import QuizResultModal from "@/components/QuizResultModal.vue";
 export default class MultiplyQuiz extends Quiz {
   get isCorrect(): boolean {
 
-    return this.currentQuiz?.first * this.currentQuiz?.second === parseInt( this.answer.value );
+    return this.currentQuiz.first * this.currentQuiz.second === parseInt( this.answer.value );
   }
 
   answer = { value: '0' };

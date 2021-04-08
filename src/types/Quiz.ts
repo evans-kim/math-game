@@ -1,7 +1,7 @@
 
 export interface QuizData {
-    [data: string]: string;
-    status: string;
+    [data: string]: any;
+    status?: string;
 }
 
 export interface QuizAnswer{

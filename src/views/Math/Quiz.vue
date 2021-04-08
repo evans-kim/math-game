@@ -22,7 +22,7 @@ export default class Quiz extends Vue {
 
   step = 0;
   questions: Array<QuizData> = [];
-  answer: QuizAnswer = {};
+  answer: QuizAnswer = {value:''};
   status = '';
   modalShow = false;
 
@@ -90,7 +90,7 @@ export default class Quiz extends Vue {
   }
 
   cleanUpAnswer(): void{
-    this.answer = {};
+    this.answer = {value:''};
   }
 
   async initialize(): Promise<boolean> {
