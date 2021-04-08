@@ -1,32 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="bg-gray-300 max-w-md mx-auto border relative " style="min-height: 100vh">
+    <div class="p-4 bg-white text-center absolute w-full top-0 z-10">
+      <h1 class="text-3xl font-bold">수학놀이</h1>
+      <p class="text-sm text-gray-500 uppercase font-bold">아빠와 나, 우리의 비밀노트</p>
     </div>
-    <router-view/>
+    <div class="w-full h-full" style="margin-top: 90px">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
